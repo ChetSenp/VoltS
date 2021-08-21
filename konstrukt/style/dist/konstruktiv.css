@@ -213,10 +213,6 @@ a {
   content: "";
   background-color: #21568A;
 }
-.app .app_container .app_content .app_anketa .app_form select {
-  width: 27.625vw;
-  height: 3vw !important;
-}
 .app .app_container .app_content .app_anketa .app_form .first {
   height: 19.625vw;
   display: flex;
