@@ -1,0 +1,230 @@
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+*:focus,
+*:active{
+  outline: none;
+}
+
+/*     HEADER        */
+
+.header_container{
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+    .header_content{
+      width: 90%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-around;
+
+          li{
+            list-style: none;
+            
+              .link{
+                font-size: 1vw;
+                color: #1B252F;
+                font-weight: 400;
+              }
+          }
+
+          li:hover{
+            position: relative;
+            a{
+              color: #21568A;
+            }
+          }
+
+          li:hover:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -0.4vw;
+            right: 0;
+            background-color: #21568A;
+            border-radius: 0.2vw;
+          }
+      }
+
+      .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width:11.6vw ;
+        height: 100%;
+
+          .phone{
+            width: 100%;
+
+            .tel{
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              color: #1B252F;
+              font-size: 1vw;
+              font-weight: 700;
+              display: flex;
+              align-items: center;
+            }
+
+            .tel:hover{
+              color: #21568A;
+            }
+
+            .tel:active{
+              transform: scaleX(1.05) scaleY(1.05);
+            }
+          }
+          
+
+          .telegram{
+            position: absolute;
+            bottom: -5vw;
+            display: none;
+            width: 60%;
+
+              .tg{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                color: #1B252F;
+                font-size: 1vw;
+                font-weight: 700;
+              }
+
+              .tg:hover{
+                color: #21568A;
+              }
+              
+              .tg:active{
+                transform: scaleX(1.05) scaleY(1.05);
+              }
+          }
+      }
+
+      .contact:hover{
+        transition: all 1.3s ease;
+        .telegram{
+          display: block;
+          position: relative;
+          bottom: 0;
+        }
+      }
+
+      .btn_zamer{
+        text-decoration: none;
+        width: 11.06vw;
+        height: 2.5vw;
+        border-radius: 0.3vw;
+        border: 2px solid #21568A;
+        font-weight: 600;
+        font-size: 1.02vw;
+        line-height: 1.53vw;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .btn_zamer:hover{
+        cursor: pointer;
+        border: none;
+        background: #21568A;
+        color: #fff;
+      }
+
+      .btn_zamer:active,
+      .btn_zamer:focus{
+        font-weight: 700;
+      }
+
+      .burger_menu{
+        display: none;
+      }
+    }
+}
+
+
+/*      TITLE       */
+
+.title{
+  width: 100%;
+  height: 32.2vw;
+
+    .title_content{
+      width: 95vw;
+      height: 100%;
+      background-color: #21568A;
+      border-radius: 0px 0.375vw 0.375vw 0px;
+    }
+}
+
+
+/*      APP        */
+
+.app{
+  width: 100%;
+  height: 133.4375vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  
+
+    .app_container{
+      border-radius: 0.375vw;
+      width: 95vw;
+      height:111.4375vw ;
+      background-color: #F3F5F8;
+
+        .app_content{
+
+
+            .app_title{
+              height: 7.03vw;
+    
+            }
+    
+            .app_form{
+              display: flex;
+              flex-direction: column;
+              height: 106.25vw;
+              width: 27.625vw;
+    
+                .first{
+                  display: flex;
+                  flex-direction: column;
+                }
+            }
+        }
+
+        
+    }
+
+
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/dist/konstruktiv.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Montaj</title>
+</head>
+<body>
+  <header class="header_container">
+    <div class="header_content">
+      <img class="logo" src="./img/logo.svg" alt="logo" style="width: 3.25vw;">
+
+      <ul class="nav">
+        <li><a class="link" href="../index.html">Главная</a></li>
+        <li><a class="link" href="../design/design.html">Заявка дизайн</a></li>
+        <li><a class="link" href="../montaj/montaj.html">Заявка мотнаж</a></li>
+        <li><a class="link" href="#">Галерея</a></li>
+        <li><a class="link" href="#">Отзывы</a></li>
+      </ul>
+
+      <div class="contact">
+        <div class="phone">
+          <a class="tel" href="#"><img class="img_tl" src="./img/tell.svg" alt="tel" style="height: 1vw;"> +38(000)000-00-00</a>
+        </div>
+
+        <div class="telegram">
+          <a class="tg" href="#"><i class="fa fa-telegram" aria-hidden="true"></i> telegram</a>
+        </div>
+      </div>
+
+      <a type="button" class="btn_zamer">
+        <p>3D Замер</p>
+      </a>
+
+      <div class="mob">
+        <div class="burger_menu">
+          <input id="menu_toggle" type="checkbox" />
+          <label class="menu_btn" for="menu_toggle">
+            <span class="line"></span>
+            
+          </label>
+          <ul class="menu_box">
+            <li class="menu_item"><a class="menu_link" href="#">Заявка дизайн</a></li>
+            <li class="menu_item"><a class="menu_link" href="#">Заявка мотнаж</a></li>
+            <li class="menu_item"><a class="menu_link" href="#">Заявка конструктив</a></li>
+            <li class="menu_item"><a class="menu_link" href="#">Галерея</a></li>
+            <li class="menu_item"><a class="menu_link" href="#">Отзывы</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="title">
+    <div class="title_content">
+      
+    </div>
+  </div>
+
+  <div class="app">
+    <div class="app_container">
+
+      <div class="app_content">
+
+        <div class="app_anketa">
+          <div class="app_title">
+            <h1>Анкета</h1>
+          </div>
+          
+          <form class="app_form">
+
+            <p class="first">
+
+              <label class="name" for="name" >
+                <input type="text" name="name" id="name" placeholder="Ф.И.О.">
+              </label>
+
+              <label class="adress" for="adress">
+                <input type="text" name="adress" id="adress" placeholder="Адрес">
+              </label>
+
+              <label class="phone" for="phone">
+                <input type="tel" name="phone" id="phone" placeholder="Номер телефона">
+              </label>
+
+              <label class="email" for="email">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+              </label>
+
+            </p>
+
+            <p class="second">
+              <h3>Корпусная мебель</h3>
+
+              <select name="mebel" id="mebel" class="mebel">
+                <option disabled selected value> -- Выберите -- </option>
+                <option value="value1">Кухня</option>
+                <option value="value2">Шкаф</option>
+                <option value="value3">Шкаф-купе</option>
+                <option value="value4">TV-стенка</option>
+                <option value="value5">другое...</option>
+              </select>
+            </p>
+
+            <p class="third">
+              <h3>Материал корпуса ДСП</h3>
+
+              <select name="material" id="material">
+                <option disabled selected value> -- Выберите -- </option>
+                <option value="value1">Egger (Австрия)</option>
+                <option value="value2">Kronospan</option>
+                <option value="value3">Swiss Krono (Украина)</option>
+              </select>
+            </p>
+
+
+            <p class="forth">
+              <h3>Материал фасада</h3>
+
+              <select name="fasad" id="fasad">
+                <option disabled selected value> -- Выберите -- </option>
+
+                <optgroup label="ДСП">
+                  <option value="value1">Egger (Австрия)</option>
+                  <option value="value2">Swiss Krono (Украина)</option>
+                  <option value="value3">Cleaf (Италия)</option>
+                  <option value="value4">Saviola (Италия)</option>
+                </optgroup>
+
+                <optgroup label="МДФ">
+                  <option value="value5">AGT (Турция)</option>
+                  <option value="value6">Egger (Австрия)</option>
+                  <option value="value7">Плёночные МДФ</option>
+                  <option value="value8">Акриловые Nieman</option>
+                </optgroup>
+              </select>
+            </p>
+
+            <p class="fifth">
+              <h3>Рамочные</h3>
+              <select name="ramka" id="ramka">
+                <option disabled selected value> -- Выберите -- </option>
+
+                <optgroup label="ДСП">
+                  <option value="value1">Egger (Австрия)</option>
+                  <option value="value2">Swiss Krono (Украина)</option>
+                  <option value="value3">Cleaf (Италия)</option>
+                  <option value="value4">Saviola (Италия)</option>
+                  <option value="value5">Kaindl</option>
+                </optgroup>
+                
+                <optgroup label="МДФ">
+                  <option value="value6">AGT (Турция)</option>
+                  <option value="value7">Egger (Австрия)</option>
+                  <option value="value8">Плёночные МДФ</option>
+                  <option value="value9">Акриловые Nieman</option>
+                </optgroup>
+              </select>
+            </p>
+            
+
+            <p class="sixth">
+              <h3>Раздвижная система</h3>
+
+              <select name="razdvig" id="razdig">
+                <option disabled selected value> -- Выберите -- </option>
+                <optgroup label="ДСП">
+                  <option value="value1">Egger (Австрия)</option>
+                  <option value="value2">Kronospan</option>
+                  <option value="value3">Swiss Krono (Украина)</option>
+                  <option value="value3">Cleaf (Италия)</option>
+                </optgroup>
+
+                <optgroup label="МДФ">
+                  <option value="value6">AGT (Турция)</option>
+                  <option value="value7">Egger (Австрия)</option>
+                  <option value="value8">Плёночные МДФ</option>
+                  <option value="value9">Акриловые Nieman</option>
+                </optgroup>
+              </select>
+
+              <label for="mirror" class="mirror">
+                <input type="radio" name="check" id="mirror" value="mirror">
+                Зеркало
+              </label>
+
+              <label for="glass" class="glass">
+                <input type="radio" name="check" id="glass" value="glass">
+                Стекло
+              </label>
+            </p>
+
+            <p class="seventh">
+              <h3>Фурнитура</h3>
+
+              <p>
+                <h3>Направляющие</h3>
+
+                <select name="box" id="box">
+                  <option disabled selected value> -- Выберите -- </option>
+                  <optgroup label="Роликовые">
+                    <option value="roll_blum">Blum</option>
+                    <option value="roll_china">Китай</option>
+                  </optgroup>
+                  <optgroup label="Шариковые">
+                    <option value="shar_dov">с доводчиком (Китай)</option>
+                    <option value="shar_bez_dov">без доводчика (Китай)</option>
+                  </optgroup>
+                  <optgroup label="Скрытого монтажа">
+                    <option value="dov_blum">с доводчиком (Blum)</option>
+                    <option value="dov_china">с доводчиком (Китай)</option>
+                    <option value="bez_dov_blum">без доводчика (Blum)</option>
+                    <option value="bez_dov_china">без доводчика (Китай)</option>
+                  </optgroup>
+                </select>
+              </p>
+
+              <p>
+                <h3>Петли</h3>
+
+                <select name="petli" id="petli">
+                  <option disabled selected value> -- Выберите -- </option>
+                  <optgroup label="С доводчиком">
+                    <option value="dov_hettich">Hettich</option>
+                    <option value="dov_blum">Blum</option>
+                    <option value="dov_china">Китай</option>
+                  </optgroup>
+                  <optgroup label="Без доводчика">
+                    <option value="bez_dov_hettich">Hettich</option>
+                    <option value="bez_dov_blum">Blum</option>
+                    <option value="bez_dov_china">Китай</option>
+                  </optgroup>
+                </select>
+              </p>
+            </p>
+
+            <p class="eight">
+              <h3>Столешницы</h3>
+
+              <select name="stol" id="stol">
+                <option disabled selected value> -- Выберите -- </option>
+                <option value="egger">Egger</option>
+                <option value="kronospan">Kronospan</option>
+                <option value="luxeform">Luxeform</option>
+                <option value="ricci">RICCI</option>
+                <option value="swiss">Swiss Krono</option>
+              </select>
+            </p>
+
+            <p class="btn">
+              <button type="submit">Оставить заявку &#8594</button>
+            </p>
+          </form>
+        </div>
+        <div class="app_img">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/konstrukt.js"></script>
+  
+</body>
+</html>

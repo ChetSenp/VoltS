@@ -1,0 +1,188 @@
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+*:focus,
+*:active {
+  outline: none;
+}
+
+/*     HEADER        */
+.header_container {
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_container .header_content {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_container .header_content .nav {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-around;
+}
+.header_container .header_content .nav li {
+  list-style: none;
+}
+.header_container .header_content .nav li .link {
+  font-size: 1vw;
+  color: #1B252F;
+  font-weight: 400;
+}
+.header_container .header_content .nav li:hover {
+  position: relative;
+}
+.header_container .header_content .nav li:hover a {
+  color: #21568A;
+}
+.header_container .header_content .nav li:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -0.4vw;
+  right: 0;
+  background-color: #21568A;
+  border-radius: 0.2vw;
+}
+.header_container .header_content .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 11.6vw;
+  height: 100%;
+}
+.header_container .header_content .contact .phone {
+  width: 100%;
+}
+.header_container .header_content .contact .phone .tel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #1B252F;
+  font-size: 1vw;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.header_container .header_content .contact .phone .tel:hover {
+  color: #21568A;
+}
+.header_container .header_content .contact .phone .tel:active {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+.header_container .header_content .contact .telegram {
+  position: absolute;
+  bottom: -5vw;
+  display: none;
+  width: 60%;
+}
+.header_container .header_content .contact .telegram .tg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: #1B252F;
+  font-size: 1vw;
+  font-weight: 700;
+}
+.header_container .header_content .contact .telegram .tg:hover {
+  color: #21568A;
+}
+.header_container .header_content .contact .telegram .tg:active {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+.header_container .header_content .contact:hover {
+  transition: all 1.3s ease;
+}
+.header_container .header_content .contact:hover .telegram {
+  display: block;
+  position: relative;
+  bottom: 0;
+}
+.header_container .header_content .btn_zamer {
+  text-decoration: none;
+  width: 11.06vw;
+  height: 2.5vw;
+  border-radius: 0.3vw;
+  border: 2px solid #21568A;
+  font-weight: 600;
+  font-size: 1.02vw;
+  line-height: 1.53vw;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_container .header_content .btn_zamer:hover {
+  cursor: pointer;
+  border: none;
+  background: #21568A;
+  color: #fff;
+}
+.header_container .header_content .btn_zamer:active,
+.header_container .header_content .btn_zamer:focus {
+  font-weight: 700;
+}
+.header_container .header_content .burger_menu {
+  display: none;
+}
+
+/*      TITLE       */
+.title {
+  width: 100%;
+  height: 32.2vw;
+}
+.title .title_content {
+  width: 95vw;
+  height: 100%;
+  background-color: #21568A;
+  border-radius: 0px 0.375vw 0.375vw 0px;
+}
+
+/*      APP        */
+.app {
+  width: 100%;
+  height: 133.4375vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.app .app_container {
+  border-radius: 0.375vw;
+  width: 95vw;
+  height: 111.4375vw;
+  background-color: #F3F5F8;
+}
+.app .app_container .app_content .app_title {
+  height: 7.03vw;
+}
+.app .app_container .app_content .app_form {
+  display: flex;
+  flex-direction: column;
+  height: 106.25vw;
+  width: 27.625vw;
+}
+.app .app_container .app_content .app_form .first {
+  display: flex;
+  flex-direction: column;
+}
