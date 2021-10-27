@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/dist/style.css">
-  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style/dist/style.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <title>FFD</title>
 </head>
 <body>
@@ -59,14 +62,39 @@
   </header>
 
   <main class="content_container">
-    <div class="content_inner">
-      <div class="left">
 
+    <div class="main_slider">
+
+      <div class="slider_item montaj">
+        <div class="left">
+          
+        </div>
+
+        <div class="right">
+
+        </div>
       </div>
 
-      <div class="right">
+      <div class="slider_item konstruktiv">
+        <div class="left">
 
+        </div>
+
+        <div class="right">
+
+        </div>
       </div>
+
+      <div class="slider_item design">
+        <div class="left">
+
+        </div>
+
+        <div class="right">
+
+        </div>
+      </div>
+
     </div>
       
   </main>
@@ -98,11 +126,108 @@
   </div>
 
   <div class="feedback_container">
-    <div class="feedback_inner"></div>
+    <div class="feedback_inner">
+      <div class="feedback_form_container">
+
+        <div class="feedback_title_container">
+          <span class="line"></span>
+          <h2 class="feedback_title">Свяжитесь с нами</h2>
+        </div>
+        
+        <form class="feedback_form" action="">
+
+          <label class="name" for="name" >
+            <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+          </label>
+
+          <label class="phone" for="phone">
+            <input type="tel" name="phone" id="phone" placeholder="Ваш номер телефона" required>
+          </label>
+
+          <button class="btn_form" type="submit">Перезвонить мне &#8594</button>
+        </form>
+        
+      </div>
+
+      <div class="feedback_img_container">
+
+      </div>
+    </div>
   </div>
 
   <footer class="footer_container">
+    <div class="footer_content">
 
+      <div class="content_left">
+
+        <div class="footer_logo_container">
+          <!-- <img src="./img/logo_blue.svg" alt="loggo" style="width: 3.25vw;"> -->
+          <div class="img"></div>
+        </div>
+        
+        <div class="app_container">
+          <h3>Заявки</h3>
+
+          <ul class="app_links">
+            <li><a href="#">&#8594 Оставить заявку на монтаж</a></li>
+            <li><a href="#">&#8594 Заполнить анкету на дизайн</a></li>
+            <li><a href="#">&#8594 Заказать конструктив</a></li>
+          </ul>
+        </div>
+      </div>
+      
+
+      <div class="center_container">
+        <div class="center_content">
+          <a class="link_top">&#129041</a>
+
+          <div class="tov">
+            <p>© Все права защищены 2021</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_right">
+        <div class="contacts_container">
+          <h3>Контакты</h3>
+
+          <div class="contact_links">
+
+            <div class="link mail">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <a href="#">
+                example@gmail.com
+              </a>
+            </div>
+
+            <div class="link phone first">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="#">
+                +38(073)22-22-222
+              </a>
+            </div>
+            
+            <div class="link phone second">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="#">
+                +38(073)22-22-222
+              </a>
+            </div>
+            
+            
+          </div>
+        </div>
+  
+        <div class="soc_container">
+          
+        </div>
+      </div>
+      
+    </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

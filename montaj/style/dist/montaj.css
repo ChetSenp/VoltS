@@ -186,3 +186,81 @@ a {
   display: flex;
   flex-direction: column;
 }
+.app .app_container .app_content .app_form .third {
+  width: 100%;
+  position: relative;
+  margin: 15px 0;
+  text-align: center;
+}
+.app .app_container .app_content .app_form .third .field__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.app .app_container .app_content .app_form .third .field__file-wrapper {
+  width: 27.625vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.app .app_container .app_content .app_form .third .field__file-wrapper .field__file-fake {
+  width: 70%;
+  height: 3.125vw;
+  width: calc(100% - 130px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 3px 0 0 3px;
+  border: 1px 1px 1px 1px;
+  border-color: black;
+}
+.app .app_container .app_content .app_form .third .field__file-wrapper .field__file-button {
+  width: 30%;
+  /* width: 8.125vw; */
+  height: 3.125vw;
+  background: #21568A;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+.app .app_container .app_content .app_form .btn {
+  width: 27.625vw;
+  height: 3.125vw;
+}
+.app .app_container .app_content .app_form .btn button {
+  width: 100%;
+  height: 100%;
+  background-color: #21568A;
+  border-radius: 0.1875vw;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.125vw;
+}
+.app .app_container .app_content .app_form .btn button:hover {
+  background-color: rgba(33, 86, 138, 0.93);
+  font-weight: 700;
+}

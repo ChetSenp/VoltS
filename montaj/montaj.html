@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/normalize.css">
   <link rel="stylesheet" href="./style/dist/montaj.css">
   <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,8 +74,8 @@
         </div>
         
         <form class="app_form">
-
-          <fieldset class="first">
+          
+          <div class="first">
             <label class="name" for="name" >
               <input type="text" name="name" id="name">
             </label>
@@ -90,16 +91,34 @@
             <label class="email" for="email">
               <input type="email" name="email" id="email">
             </label>
+          </div>
 
-        </fieldset>
 
-        
+          <div class="second">
 
+          </div>
+
+          <div class="third">
+
+            <input name="file" type="file" name="file" id="field__file" class="field field__file" multiple>
+      
+            <label class="field__file-wrapper" for="field__file">
+              <div class="field__file-fake">Файл не выбран</div>
+              <div class="field__file-button">Выбрать</div>
+            </label>
+
+          </div>
+
+          <div class="btn">
+            <button type="submit">Оставить заявку &#8594</button>
+          </div>
 
         </form>
 
       </div>
     </div>
   </div>
+
+  <script src="js/montaj.js"></script>
 </body>
 </html>

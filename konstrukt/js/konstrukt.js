@@ -1,4 +1,4 @@
-var allRadios = document.getElementsByName('check');
+/* var allRadios = document.getElementsByName('check');
 var booRadio;
 var x = 0;
 for(x = 0; x < allRadios.length; x++){
@@ -10,4 +10,4 @@ for(x = 0; x < allRadios.length; x++){
       booRadio = this;
     }
   };
-}
+} */
