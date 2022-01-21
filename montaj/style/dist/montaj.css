@@ -161,7 +161,7 @@ a {
 /*      APP        */
 .app {
   width: 100%;
-  height: 133.4375vw;
+  height: 45.4375vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -169,8 +169,9 @@ a {
 }
 .app .app_container {
   border-radius: 0.375vw;
-  width: 95vw;
-  height: 111.4375vw;
+  width: 97vw;
+  /* height:111.4375vw ; */
+  height: 35.25vw;
   background-color: #F3F5F8;
 }
 .app .app_container .app_content .app_title {
@@ -179,14 +180,133 @@ a {
 .app .app_container .app_content .app_form {
   display: flex;
   flex-direction: column;
-  height: 106.25vw;
+  height: 27.625vw;
   width: 27.625vw;
+  /* .first{
+    height: 14.375vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around !important;
+
+      .name{
+        width: 27.625vw;
+        height: 3.125vw !important;
+
+          input{
+            width: 100%;
+            height: 100%;
+            text-indent: 0.6vw;
+            border-radius: 0.3vw;
+            border: none;
+            outline: none;
+            background-color: rgba(33, 86, 138, 0.1);
+          }
+
+          input:focus{
+            background-color: #fff;
+            border: #21568A 1px solid;
+          }
+      }
+
+      .adress{
+        width: 27.625vw;
+        height: 3.125vw !important;
+
+          input{
+            width: 100%;
+            height: 100%;
+            text-indent: 0.6vw;
+            border-radius: 0.3vw;
+            border: none;
+            outline: none;
+            background-color: rgba(33, 86, 138, 0.1);
+          }
+
+          input:focus{
+            background-color: #fff;
+            border: #21568A 1px solid;
+          }
+      }
+
+      .phone{
+        width: 27.625vw;
+         height: 3.125vw !important;
+
+          input{
+            width: 100%;
+            height: 100%;
+            text-indent: 0.6vw;
+            border-radius: 0.3vw;
+            border: none;
+            outline: none;
+            background-color: rgba(33, 86, 138, 0.1);
+          }
+
+          input:focus{
+            background-color: #fff;
+            border: #21568A 1px solid;
+          }
+      }
+
+      .email{
+        width: 27.625vw;
+        height: 3.125vw !important;
+
+          input{
+            width: 100%;
+            height: 100%;
+            text-indent: 0.6vw;
+            border-radius: 0.3vw;
+            border: none;
+            outline: none;
+            background-color: rgba(33, 86, 138, 0.1);
+          }
+
+          input:focus{
+            background-color: #fff;
+            border: #21568A 1px solid;
+          }
+      }
+  } */
 }
 .app .app_container .app_content .app_form .first {
+  height: 14.375vw;
   display: flex;
   flex-direction: column;
+  justify-content: space-around !important;
+  /* input::placeholder{
+    padding-left: 0.6vw;
+  } */
+  /* label._error{
+    box-shadow: 0 0 15vw red;
+  } */
+}
+.app .app_container .app_content .app_form .first label {
+  /* width: 27.625vw;
+  height: 3.125vw;
+  border-radius: 0.3vw; */
+  display: none;
+}
+.app .app_container .app_content .app_form .first input {
+  width: 27.625vw;
+  height: 3.125vw !important;
+  text-indent: 0.6vw;
+  border-radius: 0.3vw;
+  border: none;
+  outline: none;
+  background-color: rgba(33, 86, 138, 0.1);
+}
+.app .app_container .app_content .app_form .first .data__form._error {
+  -webkit-box-shadow: 0px 0px 0.7vw 0.4vw rgba(251, 0, 0, 0.68) inset;
+  -moz-box-shadow: 0px 0px 0.7vw 0.4vw #fb0000 inset;
+  box-shadow: 0px 0px 0.4vw 0.1vw rgba(251, 0, 0, 0.973) inset;
+}
+.app .app_container .app_content .app_form .first input:focus {
+  background-color: #fff;
+  border: #21568A 1px solid;
 }
 .app .app_container .app_content .app_form .third {
+  height: 3.125vw;
   width: 100%;
   position: relative;
   margin: 15px 0;
@@ -198,13 +318,14 @@ a {
   position: absolute;
 }
 .app .app_container .app_content .app_form .third .field__file-wrapper {
-  width: 27.625vw;
+  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-around;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -251,7 +372,7 @@ a {
   height: 3.125vw;
 }
 .app .app_container .app_content .app_form .btn button {
-  width: 100%;
+  width: 75%;
   height: 100%;
   background-color: #21568A;
   border-radius: 0.1875vw;

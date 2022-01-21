@@ -170,7 +170,7 @@ h3 {
 
 .app {
   width: 100%;
-  height: 133.4375vw;
+  height: 100.4375vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -178,9 +178,14 @@ h3 {
 }
 .app .app_container {
   border-radius: 0.375vw;
-  width: 95vw;
-  height: 111.4375vw;
+  width: 97vw;
+  height: 90.4375vw;
   background-color: #F3F5F8;
+}
+.app .app_container .app_content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 .app .app_container .app_content .app_anketa {
   height: 100%;
@@ -193,133 +198,148 @@ h3 {
 .app .app_container .app_content .app_anketa .app_title {
   width: 27.625vw;
   height: 3vw;
+  font-size: 1.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.app .app_container .app_content .app_anketa .app_form {
+.app .app_container .app_content .app_anketa .form_content .app_form {
   display: flex;
   flex-direction: column;
-  height: 105.625vw;
+  height: 85.625vw;
   width: 27.625vw;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
 }
-.app .app_container .app_content .app_anketa .app_form div {
+.app .app_container .app_content .app_anketa .form_content .app_form div {
   display: flex;
   flex-direction: column;
   border: none;
-  background-color: aqua;
 }
-.app .app_container .app_content .app_anketa .app_form div h3 {
-  margin-left: 3.31vw;
-  font-size: 1.1vw;
+.app .app_container .app_content .app_anketa .form_content .app_form div h3 {
+  margin-left: 3.2vw;
+  font-size: 1.3vw;
   position: relative;
 }
-.app .app_container .app_content .app_anketa .app_form div h3:before {
+.app .app_container .app_content .app_anketa .form_content .app_form div h3:before {
   position: absolute;
-  left: -2.2vw;
+  left: -2.8vw;
   top: 43.5%;
   width: 2vw;
   height: 1px;
   content: "";
   background-color: #21568A;
 }
-.app .app_container .app_content .app_anketa .app_form select {
+.app .app_container .app_content .app_anketa .form_content .app_form select {
   background-color: rgba(33, 86, 138, 0.1);
   border-radius: 0.1875vw;
   border: none;
   text-indent: 0.6vw;
+  width: 27.625vw;
+  height: 3vw !important;
 }
-.app .app_container .app_content .app_anketa .app_form select option {
+.app .app_container .app_content .app_anketa .form_content .app_form select option {
   border-color: #fff;
 }
-.app .app_container .app_content .app_anketa .app_form select .vybor {
+.app .app_container .app_content .app_anketa .form_content .app_form select .vybor {
   display: none;
 }
-.app .app_container .app_content .app_anketa .app_form .first {
+.app .app_container .app_content .app_anketa .form_content .app_form .first {
   height: 14.375vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around !important;
-}
-.app .app_container .app_content .app_anketa .app_form .first label {
-  width: 27.625vw;
-  height: 3.125vw;
-  border-radius: 0.3vw;
   /* input::placeholder{
     padding-left: 0.6vw;
   } */
+  /* label._error{
+    box-shadow: 0 0 15vw red;
+  } */
 }
-.app .app_container .app_content .app_anketa .app_form .first label input {
-  width: 100%;
-  height: 100%;
+.app .app_container .app_content .app_anketa .form_content .app_form .first label {
+  /* width: 27.625vw;
+  height: 3.125vw;
+  border-radius: 0.3vw; */
+  display: none;
+}
+.app .app_container .app_content .app_anketa .form_content .app_form .first input {
+  width: 27.625vw;
+  height: 3.125vw !important;
   text-indent: 0.6vw;
-  border-radius: 0.1875vw;
+  border-radius: 0.3vw;
   border: none;
   outline: none;
   background-color: rgba(33, 86, 138, 0.1);
 }
-.app .app_container .app_content .app_anketa .app_form .first label input:focus {
+.app .app_container .app_content .app_anketa .form_content .app_form .first .data__form._error {
+  -webkit-box-shadow: 0px 0px 0.7vw 0.4vw rgba(251, 0, 0, 0.68) inset;
+  -moz-box-shadow: 0px 0px 0.7vw 0.4vw #fb0000 inset;
+  box-shadow: 0px 0px 0.4vw 0.1vw rgba(251, 0, 0, 0.973) inset;
+}
+.app .app_container .app_content .app_anketa .form_content .app_form .first input:focus {
   background-color: #fff;
   border: #21568A 1px solid;
 }
-.app .app_container .app_content .app_anketa .app_form .second {
+.app .app_container .app_content .app_anketa .form_content .app_form .second {
+  height: 5.9375vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* select{
+    width: 27.625vw;
+    height: 3vw !important;
+  } */
+}
+.app .app_container .app_content .app_anketa .form_content .app_form .third {
   height: 5.9375vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.app .app_container .app_content .app_anketa .app_form .second select {
-  width: 27.625vw;
-  height: 3vw !important;
-}
-.app .app_container .app_content .app_anketa .app_form .third {
+.app .app_container .app_content .app_anketa .form_content .app_form .forth {
   height: 5.9375vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.app .app_container .app_content .app_anketa .app_form .forth {
-  height: 9.6875vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.app .app_container .app_content .app_anketa .app_form .fifth {
-  height: 9.6875vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.app .app_container .app_content .app_anketa .app_form .sixth {
-  height: 13.75vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.app .app_container .app_content .app_anketa .app_form .seventh {
-  height: 13.4375vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.app .app_container .app_content .app_anketa .app_form .eight {
-  height: 9.6875vw;
-}
-.app .app_container .app_content .app_anketa .app_form .nineth {
+.app .app_container .app_content .app_anketa .form_content .app_form .fifth {
   height: 5.9375vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.app .app_container .app_content .app_anketa .app_form .btn {
+.app .app_container .app_content .app_anketa .form_content .app_form .sixth {
+  height: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.app .app_container .app_content .app_anketa .form_content .app_form .seventh {
+  height: 5.9375vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.app .app_container .app_content .app_anketa .form_content .app_form .eight {
+  height: 5.9375vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.app .app_container .app_content .app_anketa .form_content .app_form .nineth {
+  height: 5.9375vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.app .app_container .app_content .app_anketa .form_content .app_form .btn {
   width: 27.625vw;
   height: 3.125vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.app .app_container .app_content .app_anketa .app_form .btn button {
-  width: 100%;
+.app .app_container .app_content .app_anketa .form_content .app_form .btn button {
+  width: 75%;
   height: 100%;
   background-color: #21568A;
   border-radius: 0.1875vw;
@@ -327,10 +347,66 @@ h3 {
   color: #fff;
   font-weight: 600;
   font-size: 1.125vw;
+  position: relative;
 }
-.app .app_container .app_content .app_anketa .app_form .btn button:hover {
+.app .app_container .app_content .app_anketa .form_content .app_form .btn button:hover {
   background-color: rgba(33, 86, 138, 0.93);
-  font-weight: 700;
+  /* font-weight: 700; */
+  transform: scaleY(1.01) scaleX(1.01);
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(180deg);
+  }
+}
+@-ms-keyframes rotate {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+.app .app_container .app_content .app_anketa .form_content .app_form .btn button:after {
+  position: absolute;
+  /* visibility: hidden; */
+  opacity: 0;
+  right: 0;
+  /* display:none; */
+  width: 3.125vw;
+  height: 3.125vw;
+  border-radius: 60px;
+  border: 6px solid #21568A;
+  clip: rect(0px 21px 21px 0px);
+  -webkit-animation: rotate 2s linear infinite 0s;
+  -moz-animation: rotate 2s linear infinite 0s;
+  -o-animation: rotate 2s linear infinite 0s;
+  -ms-animation: rotate 2s linear infinite 0s;
+  animation: rotate 2s linear infinite 0s;
+}
+.app .app_container .app_content .app_anketa .form_content .app_form .btn button._sending:after {
+  opacity: 1 !important;
+  /* visibility: visible !important; */
+  right: 0;
 }
 .app .app_container .app_content .app_img {
   height: 100%;

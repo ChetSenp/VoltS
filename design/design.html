@@ -69,35 +69,240 @@
 
       <div class="app_content">
 
-        <div class="app_title">
-          <h1>Анкета</h1>
-        </div>
+        <div class="app_anketa">
+
+          <div class="app_title">
+            <h1>Анкета</h1>
+          </div>
         
         <form class="app_form">
 
-          <fieldset class="first">
+          <div class="fio">
+  
             <label class="name" for="name" >
-              <input type="text" name="name" id="name">
+              <input type="text" name="name" id="name" placeholder="Ф.И.О." required>
             </label>
 
             <label class="adress" for="adress">
-              <input type="text" name="adress" id="adress">
+              <input type="text" name="adress" id="adress" placeholder="Адрес" required>
             </label>
 
             <label class="phone" for="phone">
-              <input type="tel" name="phone" id="phone">
+              <input type="tel" name="phone" id="phone" placeholder="Номер телефона" required>
             </label>
 
             <label class="email" for="email">
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email" placeholder="E-mail">
             </label>
 
-        </fieldset>
+          </div>
 
+          <div class="design">
+
+            <div class="zamer">
+              <h3 class="zamer_title">Выезд на замеры :</h3>
+              <div class="zamer_radio">
+
+                <label for="zamer_true">Да</label>
+                <input type="radio" name="zamer_check" id="zamer_true" checked>
+
+                <label for="zamer_false">Нет</label>
+                <input type="radio" name="zamer_check" id="zamer_false">
+
+              </div>
+            </div>
+
+            <div class="eskiz">
+              <h3 class="eskiz_title">Наличие эскизов :</h3>
+              <div class="eskiz_radio">
+
+                <label for="eskiz_true">Да</label>
+                <input type="radio" name="eskiz_check" id="eskiz_true" checked>
+
+                <label for="eskiz_false">Нет</label>
+                <input type="radio" name="eskiz_check" id="eskiz_false">
+
+              </div>
+
+              <input type="file" name="file" id="eskiz_file">
+            </div>
+
+            <div class="nadzor">
+              <h3 class="nadzor_title">Авторский надзор :</h3>
+              <div class="nadzor_radio">
+
+                <label for="nadzor_true">Да</label>
+                <input type="radio" name="nadzor_check" id="nadzor_true" checked>
+
+                <label for="nadzor_false">Нет</label>
+                <input type="radio" name="nadzor_check" id="nadzor_false">
+
+              </div>
+            </div>
+
+            <div class="object">
+              <h3 class="object_title">Помещение/Объект</h3>
+
+              <div class="prihozhaya">
+                <h4>Прихожая</h4>
+                <select name="prihozhaya_select" id="prihozhaya_select">
+                  <option disabled selected value class="vybor"> -- Выберите -- </option>
+                  <option value="value1">Шкаф</option>
+                  <option value="value2">Шкаф-купе</option>
+                  <option value="value3">Вешалка</option>
+                  <option value="value4">Полка для обуви</option>
+                  <option value="value5">Трюмо</option>
+                  <option value="value6">Комод</option>
+                </select>
+              </div>
+
+              <div class="gostynnaya">
+                <h4>Гостинная</h4>
+                <select name="gostynnaya_select" id="gostynnaya_select">
+                  <option disabled selected value class="vybor"> -- Выберите -- </option>
+                  <option value="value1">Шкаф-горка</option>
+                  <option value="value2">Шкаф-купе</option>
+                  <option value="value3">Стеллаж</option>
+                  <option value="value4">Жунрналынй столик</option>
+                  <option value="value5">Прикраватный столик</option>
+                  <option value="value6">Комод</option>
+                  <option value="value7">Консольная полка для ТВ</option>
+                  <option value="value8">Тумба для ТВ</option>
+                  <option value="value9">Пенал</option>
+                </select>
+              </div>
+
+              <div class="kuhnya">
+                <h4>Кухня</h4>
+                <select name="kuhnya_select" id="kuhnya_select">
+                  <option disabled selected value class="vybor"> -- Выберите -- </option>
+                  <option value="value1">Кухня с островом</option>
+                  <option value="value2">Прямая кухня</option>
+                  <option value="value3">Угловая кухня</option>
+                  <option value="value4">П-образная кухня</option>
+                  <option value="value5">Кухня с барной стойкой</option>
+                </select>
+              </div>
+
+              <div class="spalnya">
+                <h4>Спальня</h4>
+                <select name="spalnya_select" id="spalnya_select">
+                  <option disabled selected value class="vybor"> -- Выберите -- </option>
+                  <option value="value1">Шкаф</option>
+                  <option value="value2">Шкаф-купе</option>
+                  <option value="value3">Комод</option>
+                  <option value="value4">Консольная полка для ТВ</option>
+                  <option value="value5">Тумба для ТВ</option>
+                  <option value="value6">Прикраватная тумба</option>
+                  <option value="value7">Кровать</option>
+                  <option value="value8">Туалетный столик</option>
+                </select>
+              </div>
+
+              <div class="detskaya">
+                <h4>Детская</h4>
+                <select name="detskaya_select" id="detskaya_select">
+                  <option disabled selected value class="vybor"> -- Выберите -- </option>
+                  <option value="value1">Шкаф</option>
+                  <option value="value2">Шкаф-купе</option>
+                  <option value="value3">Комод</option>
+                  <option value="value4">Консольная полка для ТВ</option>
+                  <option value="value5">Тумба для ТВ</option>
+                  <option value="value6">Прикраватная тумба</option>
+                  <option value="value7">Кровать</option>
+                  <option value="value8">Стол-парта</option>
+                  <option value="value9">Письменный стол</option>
+                  <option value="value10">Стеллаж</option>
+                </select>
+              </div>
+
+              <div class="kabinet">
+                <h4>Кабинет</h4>
+                <select name="kabinet_select" id="kabinet_select">
+                  <option disabled selected value class="vybor"> -- Выберите -- </option>
+                  <option value="value1">Шкаф</option>
+                  <option value="value2">Шкаф-купе</option>
+                  <option value="value3">Комод</option>
+                  <option value="value4">Консольная полка для ТВ</option>
+                  <option value="value5">Тумба для ТВ</option>
+                  <option value="value6">Письменный стол</option>
+                  <option value="value7">Стеллаж</option>
+                </select>
+              </div>
+
+              <div class="sanuzel">
+                <h4>Санузел</h4>
+                <select name="sanuzel_select" id="sanuzel_select">
+                  <option disabled selected value class="vybor"> -- Выберите -- </option>
+                  <option value="value1">Шкаф</option>
+                  <option value="value2">Мойдодыр</option>
+                  <option value="value3">Стеллаж</option>
+                </select>
+              </div>
+
+              <div class="garderob">
+                <h4>Гардероб</h4>
+                <select name="garderob_select" id="garderob_select">
+                  <option disabled selected value class="vybor"> -- Выберите -- </option>
+                  <option value="value1">Шкаф</option>
+                  <option value="value2">Хозяйственный шкаф</option>
+                  <option value="value3">Стеллаж</option>
+                  <option value="value4">Витрина</option>
+                  <option value="value5">Комод</option>
+                </select>
+              </div>
+
+              <div class="prachka">
+                <h4>Прачечная</h4>
+                <select name="prachka_select" id="prachka_select">
+                  <option disabled selected value class="vybor"> -- Выберите -- </option>
+                  <option value="value1">Шкаф</option>
+                  <option value="value2">Мойдодыр</option>
+                </select>
+              </div>
+              
+            </div>
+
+            <div class="style">
+              <h3>Стиль мебели</h3>
+              <select name="style_mebel" id="style_mebel">
+                <option disabled selected value class="vybor"> -- Выберите -- </option>
+                <optgroup label="Классический стиль">
+                  <option value="value1">Барокко</option>
+                  <option value="value2">Рококо</option>
+                  <option value="value3">Классицизм</option>
+                  <option value="value4">Ампир</option>
+                  <option value="value5">Эклетика</option>
+                </optgroup>
+                <optgroup label="Этнический стиль">
+                  <option value="value1">Японский</option>
+                  <option value="value2">Арабский</option>
+                  <option value="value3">Африканский</option>
+                  <option value="value4">Египетский</option>
+                  <option value="value5">Китайский</option>
+                  <option value="value6">Кантри</option>
+                  <option value="value7">Американский</option>
+                </optgroup>
+                <optgroup label=" Современный стиль">
+                  <option value="value1">Минимализм</option>
+                  <option value="value2">Хай-тек</option>
+                  <option value="value3">Лофт</option>
+                  <option value="value4">Конструктивизм</option>
+                  <option value="value5">Авангард</option>
+                  <option value="value6">Поп-арт</option>
+                  <option value="value7">Экостиль</option>
+                </optgroup>
+              </select>
+            </div>
+
+          </div>
         
 
 
         </form>
+        </div>
+
+        <div class="app_img"></div>
 
       </div>
     </div>

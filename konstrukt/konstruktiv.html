@@ -76,25 +76,25 @@
           </div>
           
           <div class="form_content">
-            <form class="app_form">
+            <form id="form" class="app_form">
 
               <div class="first">
   
-                <label class="name" for="name" >
-                  <input type="text" name="name" id="name" placeholder="Ф.И.О." required>
-                </label>
+                <label  class="name" for="formName"></label>
+                <input class="data__form _req" type="text" name="name" id="formName" placeholder="Ф.И.О. *">
+                
   
-                <label class="adress" for="adress">
-                  <input type="text" name="adress" id="adress" placeholder="Адрес" required>
-                </label>
+                <label  class="adress" for="formAdress"></label>
+                <input class="data__form _req" type="text" name="adress" id="formAdress" placeholder="Адрес *">
+                
   
-                <label class="phone" for="phone">
-                  <input type="tel" name="phone" id="phone" placeholder="Номер телефона" required>
-                </label>
+                <label  class="phone" for="formPhone"></label>
+                <input class="data__form _req" type="tel" name="phone" id="formPhone" placeholder="Номер телефона *">
+                
   
-                <label class="email" for="email">
-                  <input type="email" name="email" id="email" placeholder="E-mail">
-                </label>
+                <label  class="email" for="formEmail"></label>
+                <input class="data__form _req _email" type="email" name="email" id="formEmail" placeholder="E-mail *">
+                
   
               </div>
   
@@ -241,8 +241,6 @@
   
               </div>
   
-  
-  
               <div class="nineth">
                 <h3>Столешницы</h3>
   
@@ -258,6 +256,7 @@
   
               <div class="btn">
                 <button type="submit">Оставить заявку &#8594</button>
+                <div class="load"></div>
               </div>
             </form>
           </div>
@@ -271,5 +270,6 @@
     </div>
   </div>
 
+  <script src="./js/konstrukt.js"></script>
 </body>
 </html>

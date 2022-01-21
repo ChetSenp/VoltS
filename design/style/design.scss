@@ -189,7 +189,7 @@ a{
 
 .app{
   width: 100%;
-  height: 133.4375vw;
+  height: 100.4375vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -198,29 +198,225 @@ a{
 
     .app_container{
       border-radius: 0.375vw;
-      width: 95vw;
-      height:111.4375vw ;
+      width: 97vw;
+      height:90.4375vw ;
       background-color: #F3F5F8;
 
         .app_content{
-
-
-            .app_title{
-              height: 7.03vw;
-    
-            }
-    
-            .app_form{
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          
+            .app_anketa{
+              height: 100%;
+              width: 30%;
               display: flex;
               flex-direction: column;
-              height: 106.25vw;
-              width: 27.625vw;
-    
-                .first{
+              justify-content: space-around;
+              align-items: flex-end;
+
+                .app_title{
+                  width: 27.625vw;
+                  height: 3vw;
+                  font-size: 1.5vw;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+        
+                .app_form{
                   display: flex;
                   flex-direction: column;
+                  height: 95%;
+                  width: 27.625vw;
+                  justify-content: space-around;
+                  z-index: 100;
+    
+                    div{
+                      display: flex;
+                      flex-direction: column;
+                      border: none;
+                      background-color: aqua;
+    
+    
+                        h3{
+                          margin-left: 3.31vw;
+                          font-size:1.3vw !important;
+                          position: relative;
+                        }
+    
+                        h3:before{
+                          position: absolute;
+                          left: -2.2vw;
+                          top: 43.5%;
+                          width: 2vw;
+                          height: 1px;
+                          content: '';
+                          background-color: #21568A;
+                        }
+    
+                        div{
+    
+                        }
+    
+                    }
+                    
+                    /* select{
+                      background-color: rgba(33, 86, 138, 0.1);
+                      border-radius: .1875vw;
+                      border: none;
+                      text-indent: 0.6vw;
+    
+                        option{
+                          border-color: #fff;
+                        }
+    
+                        .vybor{
+                          display: none;
+                        }
+                    } */
+    
+                    .fio{
+                      height: 14.375vw;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-around !important;
+    
+    
+                      label{
+                        width: 27.625vw;
+                        height: 3.125vw;
+                        border-radius: 0.3vw;
+    
+                          input{
+                            width: 100%;
+                            height: 100%;
+                            text-indent: 0.6vw;
+                            border-radius: .1875vw;
+                            border: none;
+                            outline: none;
+                            background-color: rgba(33, 86, 138, 0.1);
+                          }
+    
+                          input:focus{
+                            background-color: #fff;
+                            border: #21568A 1px solid;
+                          }
+    
+                          /* input::placeholder{
+                            padding-left: 0.6vw;
+                          } */
+                      }
+    
+                      .name{
+    
+                      }
+    
+                      .adress{
+                      }
+    
+                      .phone{
+                      }
+    
+                      .email{
+                      }
+                    }
+    
+                    .design{
+                      height: 68vw;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+    
+                        .zamer{
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          width: 100%;
+
+                            .zamer_radio{
+                              display: flex;
+                              flex-direction: row;
+                            }
+                        }
+    
+                        .eskiz{
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          width: 100%;
+
+                            .eskiz_radio{
+                              display: flex;
+                              flex-direction: row;
+                            }
+                        }
+
+                        .nadzor{
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          width: 100%;
+
+                            .nadzor_radio{
+                              display: flex;
+                              flex-direction: row;
+                            }
+                        }
+    
+                        .object{
+                          div{
+                            h4{
+                              font-size: 1.1vw;
+                            }
+                            select{
+                              background-color: rgba(33, 86, 138, 0.1);
+                              border-radius: .1875vw;
+                              border: none;
+                              text-indent: 0.6vw;
+                              width: 27.625vw;
+                              height: 3vw !important;
+      
+                                option{
+                                  border-color: #fff;
+                                }
+      
+                                .vybor{
+                                  display: none;
+                                }
+                            }
+                          }
+                        }
+    
+                        .style{
+                          select{
+                            background-color: rgba(33, 86, 138, 0.1);
+                            border-radius: .1875vw;
+                            border: none;
+                            text-indent: 0.6vw;
+    
+                              option{
+                                border-color: #fff;
+                              }
+    
+                              .vybor{
+                                display: none;
+                              }
+                          }
+                        }
+                    }
                 }
             }
+
+            .app_img{
+
+            }
+
+
+            
         }
 
         
